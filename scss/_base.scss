@@ -1,0 +1,50 @@
+.hidden{
+    animation-name: hide-animation; 
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+	animation-delay: 0s;
+	animation-timing-function: ease-in;
+}
+
+@keyframes hide-animation{
+	0%{
+		opacity: 1;
+	}
+
+	100%{
+		opacity: 0;
+		display: none;
+	}
+}
+
+.active {
+    animation-name: active-animation; 
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+	animation-delay: 0s;
+	animation-timing-function: ease-in;
+}
+
+@keyframes active-animation{
+	0%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+		display: block;
+	}
+}
+
+header{
+	@include centerme();
+}
+ul{
+	@include navStyle();
+	li{
+		@include navItem();
+		a{
+			text-decoration: none;
+		} //a
+	} //li
+} //ul
