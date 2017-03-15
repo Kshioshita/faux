@@ -1,5 +1,68 @@
 body{
-	font-family: 'grand_hotelregular';
+	font-family: $headerfont;
+	background-color: $hovercolor;
+
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	background-color: $acolor;
+}
+
+header{
+	text-align: left;
+	font-size: 2.75em;
+	background-color: $headercolor;
+	h1{
+		margin:0;
+		padding:20px;
+	}
+}
+ul{
+	@include navStyle();
+	text-align: left;
+	padding-left: 10px;
+	box-sizing: border-box;
+	margin:0;
+	font-size: 1.25em;
+	background-color: $navcolor;
+	li{
+		@include navItem();
+		a{
+			color: $acolor;
+			text-decoration: none;
+		} //a
+		a:hover{
+			color: $hovercolor;
+		}
+	} //li
+} //ul
+
+section{
+	font-family: $bodyfont;
+	background-color: $bodycolor;
+	padding:20px;
+	width: 85%;
+	margin: 30px auto;
+	h2{
+		font-family: $headerfont;
+		margin:0px;
+		font-size: 4em;
+	}
+	p{
+		font-size: 1.25em;
+	}
+	#quote1, #quote2, #quote3{
+		color: $headercolor;
+		font-family: $headerfont;
+		font-size: 2em;
+		@include centerme;
+	}
+}
+
+footer{
+	@include centerme;
 }
 .hidden{
     animation-name: hide-animation; 
@@ -38,16 +101,3 @@ body{
 		display: block;
 	}
 }
-
-header{
-	@include centerme();
-}
-ul{
-	@include navStyle();
-	li{
-		@include navItem();
-		a{
-			text-decoration: none;
-		} //a
-	} //li
-} //ul

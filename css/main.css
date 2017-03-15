@@ -4,6 +4,7 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -400,30 +401,6 @@ th {
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: 'lobster_twobold';
-  src: url("../fonts/lobstertwo-bold-webfont.woff2") format("woff2"), url("../fonts/lobstertwo-bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'lobster_twobold_italic';
-  src: url("../fonts/lobstertwo-bolditalic-webfont.woff2") format("woff2"), url("../fonts/lobstertwo-bolditalic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'lobster_twoitalic';
-  src: url("../fonts/lobstertwo-italic-webfont.woff2") format("woff2"), url("../fonts/lobstertwo-italic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'lobster_tworegular';
-  src: url("../fonts/lobstertwo-regular-webfont.woff2") format("woff2"), url("../fonts/lobstertwo-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -509,7 +486,75 @@ textarea {
 }
 
 body {
-  font-family: 'grand_hotelregular';
+  font-family: "grand_hotelregular", cursive;
+  background-color: #7FC7AF;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #3FB8AF;
+}
+
+header {
+  text-align: left;
+  font-size: 2.75em;
+  background-color: #FF3D7F;
+}
+header h1 {
+  margin: 0;
+  padding: 20px;
+}
+
+ul {
+  width: 100%;
+  text-align: center;
+  padding: 0px;
+  margin-top: 10px;
+  text-align: left;
+  padding-left: 10px;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 1.25em;
+  background-color: #FFDA87;
+}
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+ul li a {
+  color: #3FB8AF;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: #7FC7AF;
+}
+
+section {
+  font-family: "Raleway", sans-serif;
+  background-color: #FF9E9D;
+  padding: 20px;
+  width: 85%;
+  margin: 30px auto;
+}
+section h2 {
+  font-family: "grand_hotelregular", cursive;
+  margin: 0px;
+  font-size: 4em;
+}
+section p {
+  font-size: 1.25em;
+}
+section #quote1, section #quote2, section #quote3 {
+  color: #FF3D7F;
+  font-family: "grand_hotelregular", cursive;
+  font-size: 2em;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
 }
 
 .hidden {
@@ -546,25 +591,6 @@ body {
     display: block;
   }
 }
-header {
-  text-align: center;
-}
-
-ul {
-  width: 100%;
-  text-align: center;
-  padding: 0px;
-  margin-top: 10px;
-}
-ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 10px;
-}
-ul li a {
-  text-decoration: none;
-}
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
