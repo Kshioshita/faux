@@ -485,6 +485,53 @@ textarea {
   padding: 0.2em 0;
 }
 
+.icon-sprite, .icon-email, .icon-etsy, .icon-facebook, .icon-instagram, .icon-phone, .icon-twitter {
+  background-image: url('../img/icon-sf43b64dad5.png');
+  background-repeat: no-repeat;
+}
+
+.icon-email {
+  background-position: 0 -400px;
+}
+.icon-email:hover, .icon-email.email-hover {
+  background-position: 0 0;
+}
+
+.icon-etsy {
+  background-position: 0 -1200px;
+}
+.icon-etsy:hover, .icon-etsy.etsy-hover {
+  background-position: 0 -800px;
+}
+
+.icon-facebook {
+  background-position: 0 -2000px;
+}
+.icon-facebook:hover, .icon-facebook.facebook-hover {
+  background-position: 0 -1600px;
+}
+
+.icon-instagram {
+  background-position: 0 -2800px;
+}
+.icon-instagram:hover, .icon-instagram.instagram-hover {
+  background-position: 0 -2400px;
+}
+
+.icon-phone {
+  background-position: 0 -3600px;
+}
+.icon-phone:hover, .icon-phone.phone-hover {
+  background-position: 0 -3200px;
+}
+
+.icon-twitter {
+  background-position: 0 -4400px;
+}
+.icon-twitter:hover, .icon-twitter.twitter-hover {
+  background-position: 0 -4000px;
+}
+
 *,
 *:before,
 *:after {
@@ -547,6 +594,34 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: #7FC7AF;
+}
+
+#social h3, #contact h3 {
+  text-align: center;
+  font-family: "grand_hotelregular", cursive;
+  font-size: 3em;
+}
+#social ul, #contact ul {
+  width: 100%;
+  text-align: center;
+  padding: 0px;
+  margin-top: 10px;
+}
+#social ul li, #contact ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+#social ul li a, #contact ul li a {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  zoom: .25;
+}
+#social ul li a span, #contact ul li a span {
+  position: absolute;
+  top: -9999em;
+  left: -9999em;
 }
 
 section {

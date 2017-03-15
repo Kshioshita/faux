@@ -1,3 +1,6 @@
+@import 'icon/*.png';
+@include all-icon-sprites;
+
 *,
 *:before,
 *:after {
@@ -59,6 +62,37 @@ nav{
 		} //li
 	} //ul
 } //nav
+
+#social, #contact{
+	h3{
+		@include centerme;
+		font-family: $headerfont;
+		font-size: 3em;
+	}
+	ul{
+		width: 100%;
+		@include centerme;
+		padding: 0px;
+		margin-top: 10px;
+		li{
+			list-style: none;
+			display: inline-block;
+			padding: 10px;
+			a{
+				display: inline-block;
+				width: 400px;
+				height: 400px;
+				zoom:.25;
+				span{
+					position: absolute;
+					top: -9999em;
+					left: -9999em;
+					
+				}//span
+			}//a
+		} //li
+	} //ul
+}
 
 section{
 	font-family: $bodyfont;
