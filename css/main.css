@@ -4,7 +4,7 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -485,6 +485,20 @@ textarea {
   padding: 0.2em 0;
 }
 
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
 body {
   font-family: "grand_hotelregular", cursive;
   background-color: #7FC7AF;
@@ -506,7 +520,11 @@ header h1 {
   padding: 20px;
 }
 
-ul {
+nav {
+  position: sticky;
+  top: 0;
+}
+nav ul {
   width: 100%;
   text-align: center;
   padding: 0px;
@@ -515,46 +533,59 @@ ul {
   padding-left: 10px;
   box-sizing: border-box;
   margin: 0;
-  font-size: 1.25em;
+  font-size: 1.5em;
   background-color: #FFDA87;
 }
-ul li {
+nav ul li {
   list-style: none;
   display: inline-block;
   padding: 10px;
 }
-ul li a {
+nav ul li a {
   color: #3FB8AF;
   text-decoration: none;
 }
-ul li a:hover {
+nav ul li a:hover {
   color: #7FC7AF;
 }
 
 section {
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #FF9E9D;
   padding: 20px;
   width: 85%;
   margin: 30px auto;
 }
 section h2 {
+  text-align: center;
   font-family: "grand_hotelregular", cursive;
   margin: 0px;
-  font-size: 4em;
+  font-size: 6em;
 }
-section p {
+section img {
+  display: inline-block;
+  width: 50%;
+}
+section .welcomep {
+  float: right;
+  text-indent: 2.5em;
+  width: 50%;
+  display: inline-block;
   font-size: 1.25em;
 }
 section #quote1, section #quote2, section #quote3 {
+  margin-top: 40px;
   color: #FF3D7F;
   font-family: "grand_hotelregular", cursive;
   font-size: 2em;
   text-align: center;
+  float: none;
+  width: 100%;
 }
 
 footer {
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .hidden {
