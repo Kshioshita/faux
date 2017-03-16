@@ -38,6 +38,7 @@ header{
 }
 nav{
 	position: sticky;
+	position:-webkit-sticky;
 	top:0;
 	ul{
 
@@ -150,7 +151,7 @@ section{
 footer{
 	clear: both;
 	@include centerme;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 }
 .hidden{
     animation-name: hide-animation; 
@@ -291,4 +292,9 @@ footer{
 			width: 100%;
 		}
 	}
+	nav{
+		ul{
+			text-align: center;
+		} //ul
+	} //nav
 } 
