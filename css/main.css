@@ -578,7 +578,7 @@ nav ul {
   padding: 0px;
   margin-top: 10px;
   text-align: left;
-  padding-left: 10px;
+  padding-left: 50px;
   box-sizing: border-box;
   margin: 0;
   font-size: 1.75em;
@@ -588,6 +588,7 @@ nav ul li {
   list-style: none;
   display: inline-block;
   padding: 10px;
+  margin: 0 3px;
 }
 nav ul li a {
   color: #3FB8AF;
@@ -597,10 +598,13 @@ nav ul li a:hover {
   color: #7FC7AF;
 }
 
-#social h3, #contact h3 {
+#social h3, #social h4, #contact h3, #contact h4 {
   text-align: center;
   font-family: "grand_hotelregular", cursive;
   font-size: 3em;
+}
+#social h4, #contact h4 {
+  font-size: 2.5em;
 }
 #social ul, #contact ul {
   width: 100%;
@@ -726,16 +730,13 @@ footer {
   }
   #social ul li, #contact ul li {
     text-align: center;
-    display: block;
-    width: 100%;
     margin: 0 auto;
   }
   #social ul li a, #contact ul li a {
     margin: 0 auto;
-    display: block;
     width: 400px;
     height: 400px;
-    zoom: .5;
+    zoom: .2;
   }
 
   #social .grid ul li {
@@ -783,17 +784,26 @@ footer {
     display: block;
     width: 400px;
     height: 400px;
-    zoom: .5;
+    zoom: .2;
   }
 
   #social .grid ul li {
     width: 100%;
     display: block;
+    max-width: 30px;
   }
   #social .grid ul li img {
     width: 100%;
+    max-width: 30px;
     padding: 0px;
     display: block;
+  }
+
+  #social li {
+    max-width: 250px;
+  }
+  #social .extra {
+    display: none;
   }
 
   section {
@@ -811,6 +821,7 @@ footer {
   }
 
   nav ul {
+    padding-left: 0px;
     text-align: center;
   }
 }

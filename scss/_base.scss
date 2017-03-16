@@ -44,7 +44,7 @@ nav{
 
 		@include navStyle();
 		text-align: left;
-		padding-left: 10px;
+		padding-left: 50px;
 		box-sizing: border-box;
 		margin:0;
 		font-size: 1.75em;
@@ -53,6 +53,7 @@ nav{
 		li{
 
 			@include navItem();
+			margin: 0 3px;
 			a{
 				color: $acolor;
 				text-decoration: none;
@@ -65,10 +66,13 @@ nav{
 } //nav
 
 #social, #contact{
-	h3{
+	h3,h4{
 		@include centerme;
 		font-family: $headerfont;
 		font-size: 3em;
+	}
+	h4{
+		font-size: 2.5em;
 	}
 	ul{
 		width: 100%;
@@ -197,16 +201,16 @@ footer{
 			@include centerme;
 			li{
 				@include centerme;
-				display:block;
-				width: 100%;
+				// display:block;
+				// width: 100%;
 				margin:0 auto;
 
 				a{
 					margin: 0 auto;
-					display:block;
+					// display:block;
 					width: 400px;
 					height: 400px;
-					zoom:.5;
+					zoom:.2;
 				}//a
 			}//li
 		}//ul
@@ -259,7 +263,7 @@ footer{
 					display:block;
 					width: 400px;
 					height: 400px;
-					zoom:.5;
+					zoom:.2;
 				}//a
 			}//li
 		}//ul
@@ -270,13 +274,23 @@ footer{
 				li{
 					width: 100%;
 					display:block;
+					max-width: 30px;
 					img{
 						width: 100%;
+						max-width: 30px;
 						padding: 0px;
 						display:block;
 					}
 				}
 			}
+		}
+	}
+	#social{
+		li{
+			max-width: 250px;
+		}
+		.extra{
+			display: none;
 		}
 	}
 	section{
@@ -294,6 +308,7 @@ footer{
 	}
 	nav{
 		ul{
+			padding-left: 0px;
 			text-align: center;
 		} //ul
 	} //nav
