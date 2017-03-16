@@ -12,12 +12,4 @@ function changeQuote(){
 	}
 	document.getElementById(quoteId[quoteNumber]).classList.remove('hidden');
 	document.getElementById(quoteId[quoteNumber]).classList.add('active');
-
-
-	// document.getElementById(quoteId[quoteNumber]).style.display = "none";
-	// quoteNumber++;
-	// if(quoteNumber>maxQuotes-1){
-	// 	quoteNumber=0;
-	// }
-	// document.getElementById(quoteId[quoteNumber]).style.display = "block";
 }
