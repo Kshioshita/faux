@@ -46,7 +46,7 @@ nav{
 		padding-left: 10px;
 		box-sizing: border-box;
 		margin:0;
-		font-size: 1.5em;
+		font-size: 1.75em;
 		background-color: $navcolor;
 		
 		li{
@@ -72,17 +72,17 @@ nav{
 	ul{
 		width: 100%;
 		@include centerme;
-		padding: 0px;
+		padding-bottom: 10px;
 		margin-top: 10px;
 		li{
 			list-style: none;
 			display: inline-block;
-			padding: 10px;
+			padding:5px;
 			a{
 				display: inline-block;
 				width: 400px;
 				height: 400px;
-				zoom:.25;
+				zoom:.4;
 				span{
 					position: absolute;
 					top: -9999em;
@@ -116,9 +116,11 @@ section{
 		width: 50%;
 		display: inline-block;
 		font-size: 1.25em;
+		margin-bottom: 10px;
 	}
 	#quote1, #quote2, #quote3{
-		margin-top: 40px;
+		margin-top: 70px;
+		margin-bottom: 20px;
 		color: $headercolor;
 		font-family: $headerfont;
 		font-size: 2em;
@@ -127,8 +129,26 @@ section{
 		width: 100%;
 	}
 }
-
+.grid{
+	padding:0px;
+	width: 100%;
+	box-sizing:border-box;
+	li{
+		box-sizing:border-box;
+		padding: 0px;
+		margin-bottom: 5px;
+		// margin-left: %;
+		width: 30%;
+		display: inline-block;
+		img{
+			width: 100%;
+			padding: 0px;
+			display: inline-block;
+		}
+	}
+}
 footer{
+	clear: both;
 	@include centerme;
 	padding-bottom: 10px;
 }
@@ -169,3 +189,106 @@ footer{
 		display: block;
 	}
 }
+@media only screen and (min-width: 447px) and (max-width: 887px){
+	#social, #contact{
+		ul{
+			margin:0 auto;
+			@include centerme;
+			li{
+				@include centerme;
+				display:block;
+				width: 100%;
+				margin:0 auto;
+
+				a{
+					margin: 0 auto;
+					display:block;
+					width: 400px;
+					height: 400px;
+					zoom:.5;
+				}//a
+			}//li
+		}//ul
+	}
+	#social{
+		.grid{
+			ul{
+				li{
+					width: 100%;
+					display:block;
+					img{
+						width: 100%;
+						padding: 0px;
+						display:block;
+					}
+				}
+			}
+		}
+	}
+	section{
+		text-align: center;
+		img{
+			max-width: 400px;
+			width: 100%;
+			margin: 0 auto;
+		}
+		.welcomep{
+			display: block;
+			text-align: left;
+			width: 100%;
+		}
+	}
+} /*end medium tablet  block*/
+@media all and (max-width: 446px){
+	h1{
+		font-size: 1.75em;
+	}
+	#social, #contact{
+		ul{
+			margin:0 auto;
+			@include centerme;
+			li{
+				@include centerme;
+				display:block;
+				width: 100%;
+				margin:0 auto;
+
+				a{
+					margin: 0 auto;
+					display:block;
+					width: 400px;
+					height: 400px;
+					zoom:.5;
+				}//a
+			}//li
+		}//ul
+	}
+	#social{
+		.grid{
+			ul{
+				li{
+					width: 100%;
+					display:block;
+					img{
+						width: 100%;
+						padding: 0px;
+						display:block;
+					}
+				}
+			}
+		}
+	}
+	section{
+		text-align: center;
+		img{
+			max-width: 400px;
+			width: 100%;
+			margin: 0 auto;
+		}
+		.welcomep{
+			display: block;
+			text-align: left;
+			width: 100%;
+		}
+	}
+} 

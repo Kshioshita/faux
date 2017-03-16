@@ -580,7 +580,7 @@ nav ul {
   padding-left: 10px;
   box-sizing: border-box;
   margin: 0;
-  font-size: 1.5em;
+  font-size: 1.75em;
   background-color: #FFDA87;
 }
 nav ul li {
@@ -604,19 +604,19 @@ nav ul li a:hover {
 #social ul, #contact ul {
   width: 100%;
   text-align: center;
-  padding: 0px;
+  padding-bottom: 10px;
   margin-top: 10px;
 }
 #social ul li, #contact ul li {
   list-style: none;
   display: inline-block;
-  padding: 10px;
+  padding: 5px;
 }
 #social ul li a, #contact ul li a {
   display: inline-block;
   width: 400px;
   height: 400px;
-  zoom: .25;
+  zoom: .4;
 }
 #social ul li a span, #contact ul li a span {
   position: absolute;
@@ -647,9 +647,11 @@ section .welcomep {
   width: 50%;
   display: inline-block;
   font-size: 1.25em;
+  margin-bottom: 10px;
 }
 section #quote1, section #quote2, section #quote3 {
-  margin-top: 40px;
+  margin-top: 70px;
+  margin-bottom: 20px;
   color: #FF3D7F;
   font-family: "grand_hotelregular", cursive;
   font-size: 2em;
@@ -658,7 +660,26 @@ section #quote1, section #quote2, section #quote3 {
   width: 100%;
 }
 
+.grid {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.grid li {
+  box-sizing: border-box;
+  padding: 0px;
+  margin-bottom: 5px;
+  width: 30%;
+  display: inline-block;
+}
+.grid li img {
+  width: 100%;
+  padding: 0px;
+  display: inline-block;
+}
+
 footer {
+  clear: both;
   text-align: center;
   padding-bottom: 10px;
 }
@@ -695,6 +716,97 @@ footer {
   100% {
     opacity: 1;
     display: block;
+  }
+}
+@media only screen and (min-width: 447px) and (max-width: 887px) {
+  #social ul, #contact ul {
+    margin: 0 auto;
+    text-align: center;
+  }
+  #social ul li, #contact ul li {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #social ul li a, #contact ul li a {
+    margin: 0 auto;
+    display: block;
+    width: 400px;
+    height: 400px;
+    zoom: .5;
+  }
+
+  #social .grid ul li {
+    width: 100%;
+    display: block;
+  }
+  #social .grid ul li img {
+    width: 100%;
+    padding: 0px;
+    display: block;
+  }
+
+  section {
+    text-align: center;
+  }
+  section img {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  section .welcomep {
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+}
+/*end medium tablet  block*/
+@media all and (max-width: 446px) {
+  h1 {
+    font-size: 1.75em;
+  }
+
+  #social ul, #contact ul {
+    margin: 0 auto;
+    text-align: center;
+  }
+  #social ul li, #contact ul li {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #social ul li a, #contact ul li a {
+    margin: 0 auto;
+    display: block;
+    width: 400px;
+    height: 400px;
+    zoom: .5;
+  }
+
+  #social .grid ul li {
+    width: 100%;
+    display: block;
+  }
+  #social .grid ul li img {
+    width: 100%;
+    padding: 0px;
+    display: block;
+  }
+
+  section {
+    text-align: center;
+  }
+  section img {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  section .welcomep {
+    display: block;
+    text-align: left;
+    width: 100%;
   }
 }
 /* ==========================================================================
